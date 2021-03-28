@@ -1,0 +1,184 @@
+:root {
+	--side-background: #111;
+	--banner-background: #333;
+	--banner-text: #9b9b9b;
+	--main-background: #222;
+	--main-text: #898989;
+	--selection-background: #bbb;
+	--selection-text: #000; 
+}
+
+.background {
+	background-color: var(--side-background);
+	margin: 0;
+}
+
+.container {
+	padding: 1em;
+}
+
+.container ~ .container {
+	padding-top: 0;
+}
+
+.thick-margins {
+	padding: 2em;
+}
+
+.centered-y {
+	margin: auto;
+}
+
+.footer {
+	margin-top: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contents{
+	display: contents;
+}
+
+.col-1 {
+	flex: 0 0 8.33333333%;
+}
+.col-2 {
+	flex: 0 0 16.66666666%;
+}
+.col-3 {
+	flex: 0 0 25%;
+}
+.col-4 {
+	flex: 0 0 33.33333333%;
+}
+.col-5 {
+	flex: 0 0 41.66666666%;
+}
+.col-6 {
+	flex: 0 0 50%;
+}
+.col-7 {
+	flex: 0 0 58.33333333%;
+}
+.col-8 {
+	flex: 0 0 66.66666666%;
+}
+.col-9 {
+	flex: 0 0 75%;
+}
+.col-10 {
+	flex: 0 0 83.33333333%;
+}
+.col-11 {
+	flex: 0 0 91.66666666%;
+}
+.col-12 {
+	flex: 0 0 100%;
+}
+
+.col-4-sm {
+}
+
+.col-12-sm {
+}
+
+.hide {
+	display: none;
+}
+
+.hide-on-sm{
+}
+
+.hide-on-bg{
+	display: none;
+}
+
+@media screen and (max-width: 799px) {
+.hide-on-sm{
+	display: none;
+}
+.hide-on-bg{
+	display: block;
+}
+
+.col-4-sm {
+	flex: 0 0 33.33333333%;
+}
+.col-8-sm {
+	flex: 0 0 66.66666666%;
+}
+.col-10-sm {
+	flex: 0 0 83.33333333%;
+}
+.col-12-sm {
+	flex: 0 0 100%;
+}
+
+}
+
+@media screen and (min-width: 800px) {
+.col-10-bg {
+	flex: 0 0 83.33333333%;
+}
+}
+
+p {
+	margin-block: 0;
+	margin-inline: 0;
+	margin-top: 1.5em;
+	font-size: 2.4em;
+}
+
+p:first-of-type {
+	margin-top: 0em;
+}
+
+main {
+	background-color: var(--main-background);
+	max-width: 800px;
+	margin: auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	font-family: "Lato", "Poppins", Helvetica, Arial, sans-serif;
+	color: var(--main-text);
+}
+img {
+	display: block;
+}
+
+.round {
+	border-radius: 50%;
+}
+
+.special-button {
+	border-color: var(--banner-text);
+	border-style: solid;
+	border-width: 0.15em;
+	background-color: inherit;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+:focus {
+	outline: none;
+	box-shadow: 0 0 0 0.15rem var(--banner-text);
+}
+
+a {
+	text-decoration: none;
+	color: red;
+	
+}
+
+a:hover {
+}
+
+::selection {
+	background-color: var(--selection-background);
+	color: var(--selection-text);
+}
